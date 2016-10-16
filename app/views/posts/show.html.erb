@@ -1,0 +1,24 @@
+<div class="col-sm-11 col-xs-12 blog-content">
+  <h2 class="text-center"><%= @post.title %></h2>
+  <h5 class="text-center"><%= @post.created_at.strftime('%b %d, %Y') %></h5>
+  <div><%= raw @post.body %></div>
+  <h2>Comments</h2>
+ 	<div id="comments">
+         <%= render :partial => @post.comments %>
+         <% if current_user %>
+            <%= form_for [@post, Comment.new] do |f| %>
+              <p>
+                  <%= f.label :body, "New comment" %><br/>
+                  <%= f.text_area :body %>
+              </p>
+              <p><%= f.submit "Add comment" %></p>
+            <% end %>
+         <% else %> 
+            <small style="color:red"> Please login to comment </small>
+         <% end%>
+
+
+
+
+ </div>
+</div>

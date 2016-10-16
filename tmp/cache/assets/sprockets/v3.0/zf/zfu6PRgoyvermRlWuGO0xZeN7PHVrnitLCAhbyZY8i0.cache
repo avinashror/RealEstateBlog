@@ -1,0 +1,10 @@
+I"ù(function() {
+  $(document).ready(function() {
+    $('#comment_body').autogrow({
+      vertical: true,
+      horizontal: false
+    });
+  });
+
+}).call(this);
+:ET
