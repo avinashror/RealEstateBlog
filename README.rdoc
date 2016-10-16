@@ -5,24 +5,15 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version- 2.2.3
+* Rails version -4.2.6
 
 * System dependencies
-
-* Configuration
-
-* Database creation
+  After downloading the project move to the root directory in the terminal and run bundle install
 
 * Database initialization
+  Run rake db:migrate to get the sample data which I have aready used.
 
 * How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+  To check the test cases run rake
+  NOTE: I HAVE WRITTEN UNIT TEST
