@@ -15,5 +15,5 @@ Things you may want to cover:
   Run rake db:migrate to get the sample data which I have aready used.
 
 * How to run the test suite
-  To check the test cases run rake
+  To check the test cases run rake.
   NOTE: I HAVE WRITTEN UNIT TEST
